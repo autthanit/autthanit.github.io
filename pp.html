@@ -23,6 +23,21 @@
             top: 1rem;
             left: 1rem;
         }
+        a.project-link {
+    display: inline-block;       /* ให้ขนาดกล่องพอดีกับข้อความ */
+    padding: 8px 16px;           /* เว้นขอบด้านใน */
+    border: 2px solid #9575cd;   /* สีขอบเดียวกับลิงก์ */
+    border-radius: 8px;          /* มุมโค้งมน */
+    text-decoration: none;       /* เอาเส้นใต้ข้อความออก */
+    color: #9575cd;              /* สีข้อความ */
+    transition: background-color 0.3s, color 0.3s;
+    font-weight: 600;
+}
+
+a.project-link:hover {
+    background-color: #9575cd;   /* พื้นหลังสีเมื่อชี้ */
+    color: white;                /* ข้อความสีขาวเมื่อชี้ */
+}
     </style>
 </head>
 <body>
@@ -61,7 +76,7 @@
     <br>
 
     <h2>Projects</h2>
-    <p><a href="https://autthanit77777.github.io/index.html">Projects(Not ready yet)</a></p>
+    <p><a class="project-link" href="https://autthanit77777.github.io/index.html">Projects (Not ready yet)</a></p>
     <header>
           <p><a href="index.html">🏠BACK</a></p>
     </header>
