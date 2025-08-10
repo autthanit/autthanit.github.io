@@ -35,6 +35,22 @@
   max-width: 1000px;
   margin: 20px auto;
 }
+         a.project-link {
+    display: inline-block;       /* ให้ขนาดกล่องพอดีกับข้อความ */
+    padding: 8px 16px;           /* เว้นขอบด้านใน */
+    border: 2px solid #9575cd;   /* สีขอบเดียวกับลิงก์ */
+    border-radius: 8px;          /* มุมโค้งมน */
+    text-decoration: none;       /* เอาเส้นใต้ข้อความออก */
+    color: #9575cd;              /* สีข้อความ */
+    transition: background-color 0.3s, color 0.3s;
+    font-weight: 600;
+}
+
+a.project-link:hover {
+    background-color: #9575cd;   /* พื้นหลังสีเมื่อชี้ */
+    color: white;                /* ข้อความสีขาวเมื่อชี้ */
+}
+    </s
     </style>
 </head>
 <body>
@@ -57,7 +73,7 @@
     </div>
 
     <header>
-            <p><a href="index.html">🏠BACK</a></p>
+            <p><a  class="project-link" href="index.html">🏠BACK</a></p>
     </header>
 </body>
 </html> 
